@@ -7,7 +7,7 @@ function Hero() {
         <div className={styles.profileSection}>
           <div className={styles.imageWrapper}>
             <img
-              src="/profile.jpg"
+              src={`${import.meta.env.BASE_URL}profile.jpg`}
               alt="Profile"
               className={styles.profileImage}
             />
