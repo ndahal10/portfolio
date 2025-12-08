@@ -7,12 +7,7 @@ function Experience() {
       role: "Technology Rotational Associate - Data Engineer",
       period: "July 2025 - Present",
       description: "Leading data infrastructure and BI solutions development for enterprise reporting",
-      highlights: [
-        "Designed data models and developed parameterized SQL queries in Power BI for dynamic reporting across multiple business units",
-        "Optimized Redshift query performance through database tuning and strategic indexing, reducing query latency by 40%",
-        "Led deployment of enterprise web application for self-service metric definition updates using CloudFormation, RDS (PostgreSQL), and AWS infrastructure",
-        "Enabled company-wide standardized KPI access with real-time database updates"
-      ],
+      summary: "Optimized Redshift query performance by 40% and deployed enterprise web application for self-service KPI management using AWS infrastructure and PostgreSQL.",
       technologies: ["AWS", "Redshift", "Power BI", "PostgreSQL", "CloudFormation", "SQL", "RDS"]
     },
     {
@@ -20,12 +15,7 @@ function Experience() {
       role: "Software Engineer Intern",
       period: "June 2024 - August 2024",
       description: "Built cloud automation solutions and infrastructure tools serving 1,000+ employees",
-      highlights: [
-        "Automated and centralized AWS-Nuke across sandbox accounts using Cloud Control API, CloudFormation, and Boto3",
-        "Cut decommission time by 90% and generated $100K+ in annual cloud cost savings",
-        "Built secure AWS Console access solution with frontend UI and backend service for temporary AWS-AD credentials",
-        "Reduced manual credential requests by 85% through automated deployment via PruCloud CLI"
-      ],
+      summary: "Automated AWS resource cleanup across sandbox accounts, reducing decommission time by 90% and generating $100K+ annual savings while building secure credential access solution for 1,000+ employees.",
       technologies: ["AWS", "Python", "Boto3", "CloudFormation", "CI/CD", "Cloud Control API"]
     },
     {
@@ -33,12 +23,7 @@ function Experience() {
       role: "Software Engineer Intern",
       period: "June 2023 - August 2023",
       description: "Developed data visualization tools for investment portfolio analytics platform",
-      highlights: [
-        "Built React-based interactive data visualization widget for bond price-yield datasets with REST API integration",
-        "Implemented efficient data caching layers that minimized redundant API calls by 60%",
-        "Boosted portfolio analytics portal adoption by 50% through price history visualization feature",
-        "Enhanced real-time rendering performance and reduced backend load for analysts"
-      ],
+      summary: "Built interactive React visualization widget with efficient caching that reduced API calls by 60% and boosted platform adoption by 50%.",
       technologies: ["React", "REST APIs", "JavaScript", "Data Visualization", "Caching"]
     },
     {
@@ -46,12 +31,7 @@ function Experience() {
       role: "Full-Stack Developer",
       period: "Spring 2025",
       description: "Personal project: Salon management and booking platform with payment processing",
-      highlights: [
-        "Developed full-stack platform with user authentication and role-based access control",
-        "Implemented customer-facing features: salon browsing, real-time appointment scheduling, Stripe payment processing",
-        "Built comprehensive dashboards for staff operations, service configuration, revenue tracking, and customer analytics",
-        "Integrated email/SMS notification system for appointment reminders and promotional campaigns"
-      ],
+      summary: "Built full-stack salon booking platform with Stripe payments, real-time scheduling, and comprehensive dashboards for staff operations and analytics.",
       technologies: ["React", "Node.js", "Stripe", "Authentication", "SMS/Email APIs", "Full-Stack"]
     },
     {
@@ -59,12 +39,7 @@ function Experience() {
       role: "Events Coordinator",
       period: "January 2022 - May 2023",
       description: "Led event coordination and mentorship for women in tech community",
-      highlights: [
-        "Organized GirlHacks, one of the region's largest hackathons with 300+ participants and 10+ sponsors",
-        "Coordinated logistics, scheduling, and cross-team meetings with faculty, industry partners, and student leaders",
-        "Mentored and supported women in tech, fostering professional growth and networking opportunities",
-        "Built a more inclusive tech community through leadership and advocacy"
-      ],
+      summary: "Organized GirlHacks hackathon with 300+ participants and 10+ sponsors while mentoring women in tech and fostering an inclusive community.",
       technologies: ["Leadership", "Event Management", "Mentoring", "Community Building"]
     }
   ]
@@ -87,11 +62,7 @@ function Experience() {
                 <span className={styles.period}>{exp.period}</span>
               </div>
               <p className={styles.description}>{exp.description}</p>
-              <ul className={styles.highlights}>
-                {exp.highlights.map((highlight, i) => (
-                  <li key={i}>{highlight}</li>
-                ))}
-              </ul>
+              <p className={styles.summary}>{exp.summary}</p>
               <div className={styles.technologies}>
                 {exp.technologies.map((tech, i) => (
                   <span key={i} className={styles.tech}>{tech}</span>
