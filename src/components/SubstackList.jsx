@@ -23,7 +23,7 @@ function SubstackList() {
       author: "The Book Club",
       publication: "Love Letters to Literature",
       url: "https://open.substack.com/pub/theebookclubx/p/topics-to-research-when-youre-bored-fda?r=5f8bnb&utm_medium=ios",
-      description: "on choice, paralysis, and the fear of missing your life while trying to choose it.",
+      description: "On choice, paralysis, and the fear of missing your life while trying to choose it.",
       tags: ["Writing", "Growth"]
     },
     // Add more articles here
