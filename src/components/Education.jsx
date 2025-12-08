@@ -20,7 +20,7 @@ function Education() {
       <div className={styles.container}>
         <h2 className={styles.title}>Education</h2>
         <p className={styles.subtitle}>
-          learning and growing
+          Learning and growing
         </p>
         <div className={styles.timeline}>
           {education.map((edu, index) => (
