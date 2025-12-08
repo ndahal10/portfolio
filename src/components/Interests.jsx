@@ -7,7 +7,7 @@ function Interests() {
       icon: "✈️",
       description: "From paragliding over the mountains of Nepal to exploring Europe with family, I seek out experiences that push my boundaries and create lasting memories.",
       highlights: [
-        "Paragliding in Nepal - soaring above the Himalayas",
+        "Paragliding in Nepal",
         "Traveled across Europe",
         "Big on family traveling - exploring the world together",
         "Planning the ABC trek in Nepal next"
