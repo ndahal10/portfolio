@@ -32,7 +32,8 @@ function Experience() {
       period: "Spring 2025",
       description: "Personal project: Salon management and booking platform with payment processing",
       summary: "Built full-stack salon booking platform with Stripe payments, real-time scheduling, and comprehensive dashboards for staff operations and analytics.",
-      technologies: ["React", "Node.js", "Stripe", "Authentication", "SMS/Email APIs", "Full-Stack"]
+      technologies: ["React", "Node.js", "Stripe", "Authentication", "SMS/Email APIs", "Full-Stack"],
+      url: "https://main.d9mc2v9b3gxgw.amplifyapp.com/"
     },
     {
       company: "Women in Computing Society, NJIT",
