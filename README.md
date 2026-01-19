@@ -1,5 +1,5 @@
-Welcome to my Portfolio!
+welcome to my personal portfolio! 
 
-Feel free to look around - i am always happy to connect!
+feel free to look around - i am always happy to connect!
 
 https://ndahal10.github.io/portfolio/
