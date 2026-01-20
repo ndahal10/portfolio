@@ -4,9 +4,9 @@ function Experience() {
   const experiences = [
     {
       company: "Prudential Financial",
-      role: "Technology Rotational Associate - Data Engineer",
-      period: "July 2025 - Present",
-      description: "Leading data infrastructure and BI solutions development for enterprise reporting",
+      role: "Technology Associate",
+      period: "July 2025 - January 2025",
+      description: "Led data infrastructure and BI solutions development for enterprise reporting",
       summary: "Optimized Redshift query performance by 40% and deployed enterprise web application for self-service KPI management using AWS infrastructure and PostgreSQL.",
       technologies: ["AWS", "Redshift", "Power BI", "PostgreSQL", "CloudFormation", "SQL", "RDS"]
     },
