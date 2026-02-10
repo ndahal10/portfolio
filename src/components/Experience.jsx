@@ -5,7 +5,7 @@ function Experience() {
     {
       company: "Prudential Financial",
       role: "Technology Associate",
-      period: "July 2025 - January 2025",
+      period: "July 2025 - January 2026",
       description: "Led data infrastructure and BI solutions development for enterprise reporting",
       summary: "Optimized Redshift query performance by 40% and deployed enterprise web application for self-service KPI management using AWS infrastructure and PostgreSQL.",
       technologies: ["AWS", "Redshift", "Power BI", "PostgreSQL", "CloudFormation", "SQL", "RDS"]
