@@ -10,7 +10,7 @@ function Education() {
         "Coursework: Data Structures & Algorithms, Database Design, Operating Systems, Computer Networks, Linear Algebra, Computer Architecture, Linux Programming, Agile/Scrum Methodologies",
         "Languages: Python, Java, JavaScript, C/C++, SQL, HTML/CSS",
         "Frameworks & Libraries: React.js, Node.js, Flask, Pandas, Boto3, Conda, Tailwind CSS",
-        "Tools & Platforms: AWS, Git, Power BI, Tableau, Figma"
+        "Tools & Platforms: AWS, Firebase, Git, Power BI, Tableau, Figma"
       ]
     }
   ]

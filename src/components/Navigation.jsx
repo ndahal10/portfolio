@@ -30,7 +30,7 @@ function Navigation() {
           <li><a href="#home" onClick={(e) => scrollToSection(e, 'home')}>Home</a></li>
           <li><a href="#education" onClick={(e) => scrollToSection(e, 'education')}>Education</a></li>
           <li><a href="#experience" onClick={(e) => scrollToSection(e, 'experience')}>Experience</a></li>
-          <li><a href="#interests" onClick={(e) => scrollToSection(e, 'interests')}>Interests</a></li>
+          <li><a href="#projects" onClick={(e) => scrollToSection(e, 'projects')}>Projects</a></li>
           <li><a href="#reading" onClick={(e) => scrollToSection(e, 'reading')}>Reading</a></li>
         </ul>
       </div>

@@ -33,9 +33,6 @@ function SubstackList() {
     <section className={styles.substack} id="reading">
       <div className={styles.container}>
         <h2 className={styles.title}>Substack Reading List</h2>
-        <p className={styles.subtitle}>
-          Thought-provoking articles that shaped my thinking
-        </p>
         <div className={styles.articles}>
           {articles.map((article, index) => (
             <a

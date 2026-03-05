@@ -16,19 +16,14 @@ function Hero() {
         <div className={styles.content}>
           <h1 className={styles.greeting}>Hi, I'm Neelaza</h1>
           <p className={styles.intro}>
-            Software Engineer at Prudential Financial.
+            I love understanding how systems are designed — from the infrastructure underneath to the product on top.
           </p>
           <p className={styles.description}>
-            Passionate about full-stack development and cloud technologies, I love building
-            things and learning along the way. When I'm not coding, you'll find me exploring
-            new places, discovering great writing on Substack, and collecting inspiration
-            from around the web. I'm dedicated to mentoring, volunteering, and staying
-            current with emerging technologies. This space is my journey of continuous
-            learning and growth.
+            CS student at NJIT. I build production software — from PaceWise, an AI-powered endurance training platform, to cloud automation that saved $100K+ at Prudential. I care about shipping real things that real people use. 
           </p>
           <div className={styles.cta}>
             <a href="#experience" className={styles.button}>View My Work</a>
-            <a href="#interests" className={styles.buttonSecondary}>Learn More</a>
+            <a href="#reading" className={styles.buttonSecondary}>Learn More</a>
           </div>
         </div>
       </div>

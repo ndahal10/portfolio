@@ -27,15 +27,6 @@ function Experience() {
       technologies: ["React", "REST APIs", "JavaScript", "Data Visualization", "Caching"]
     },
     {
-      company: "STYGO",
-      role: "Full-Stack Developer",
-      period: "Spring 2025",
-      description: "Personal project: Salon management and booking platform with payment processing",
-      summary: "Built full-stack salon booking platform with Stripe payments, real-time scheduling, and comprehensive dashboards for staff operations and analytics.",
-      technologies: ["React", "Node.js", "Stripe", "Authentication", "SMS/Email APIs", "Full-Stack"],
-      url: "https://main.d9mc2v9b3gxgw.amplifyapp.com/"
-    },
-    {
       company: "Women in Computing Society, NJIT",
       role: "Events Coordinator",
       period: "January 2022 - May 2023",
@@ -49,25 +40,22 @@ function Experience() {
     <section className={styles.experience} id="experience">
       <div className={styles.container}>
         <h2 className={styles.title}>Experience</h2>
-        <p className={styles.subtitle}>
-          Building, breaking, and learning from every project
-        </p>
-        <div className={styles.grid}>
+        <p className={styles.subtitle}>Building, breaking, and learning from every project</p>
+        <div className={styles.timeline}>
           {experiences.map((exp, index) => (
-            <div key={index} className={styles.card}>
-              <div className={styles.header}>
-                <div>
-                  <h3 className={styles.company}>{exp.company}</h3>
-                  <h4 className={styles.role}>{exp.role}</h4>
-                </div>
+            <div key={index} className={`${styles.item} ${index % 2 === 0 ? styles.left : styles.right}`}>
+              <div className={styles.dot} />
+              <div className={styles.card}>
                 <span className={styles.period}>{exp.period}</span>
-              </div>
-              <p className={styles.description}>{exp.description}</p>
-              <p className={styles.summary}>{exp.summary}</p>
-              <div className={styles.technologies}>
-                {exp.technologies.map((tech, i) => (
-                  <span key={i} className={styles.tech}>{tech}</span>
-                ))}
+                <h3 className={styles.company}>{exp.company}</h3>
+                <h4 className={styles.role}>{exp.role}</h4>
+                <p className={styles.description}>{exp.description}</p>
+                <p className={styles.summary}>{exp.summary}</p>
+                <div className={styles.technologies}>
+                  {exp.technologies.map((tech, i) => (
+                    <span key={i} className={styles.tech}>{tech}</span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
