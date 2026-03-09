@@ -19,7 +19,7 @@
 .subtitle {
   text-align: center;
   font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-text-muted);
   margin-bottom: 4rem;
   font-style: italic;
 }
@@ -83,7 +83,7 @@
 
 /* Card */
 .card {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--color-card-bg);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(87, 108, 188, 0.3);
   border-radius: 12px;
@@ -100,7 +100,7 @@
 }
 
 .card:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--color-card-bg-hover);
   border-color: var(--color-primary);
   transform: translateY(-4px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -123,13 +123,13 @@
 }
 
 .description {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-text-dim);
   line-height: 1.6;
   margin-bottom: 0.75rem;
 }
 
 .summary {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-text-muted);
   line-height: 1.6;
   font-size: 0.95rem;
   margin-bottom: 1.5rem;

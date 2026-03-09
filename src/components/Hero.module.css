@@ -52,7 +52,7 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(120deg, #fff, var(--color-primary));
+  background: linear-gradient(120deg, var(--color-text), var(--color-primary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -61,14 +61,14 @@
 .intro {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-text-dim);
 }
 
 .description {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 2rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-text-dim);
 }
 
 .cta {
@@ -99,7 +99,7 @@
 
 .buttonSecondary {
   background: transparent;
-  color: white;
+  color: var(--color-text);
   border: 2px solid var(--color-primary);
 }
 

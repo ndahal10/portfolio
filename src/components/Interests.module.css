@@ -19,7 +19,7 @@
 .subtitle {
   text-align: center;
   font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-text-muted);
   margin-bottom: 3rem;
   font-style: italic;
 }
@@ -57,7 +57,7 @@
 }
 
 .description {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-text-dim);
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
@@ -67,7 +67,7 @@
 }
 
 .highlights li {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-text-muted);
   padding: 0.4rem 0;
   padding-left: 1.2rem;
   position: relative;

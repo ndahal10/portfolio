@@ -29,7 +29,7 @@
 }
 
 .section p {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-text-muted);
   line-height: 1.6;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .links a {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-text-dim);
   text-decoration: none;
   transition: all 0.3s ease;
   width: fit-content;
@@ -58,7 +58,7 @@
 }
 
 .bottom p {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-text-subtle);
   font-size: 0.9rem;
 }
 
