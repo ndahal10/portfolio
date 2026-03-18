@@ -14,7 +14,7 @@ function Footer() {
             <div className={styles.links}>
               <a href="https://github.com/ndahal10" target="_blank" rel="noopener noreferrer">GitHub</a>
               <a href="https://www.linkedin.com/in/neelaza-dahal/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a href="mailto:neelaza.dahal@outlook.com.com">Email</a>
+              <a href="mailto:neelaza.dahal@outlook.com">Email</a>
             </div>
           </div>
         </div>
