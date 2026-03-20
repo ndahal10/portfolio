@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-secondary) 100%);
+  background: var(--color-bg);
 }
 
 .container {
@@ -52,7 +52,7 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(120deg, var(--color-text), var(--color-primary));
+  background: linear-gradient(120deg, var(--color-text) 40%, var(--color-primary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -92,9 +92,9 @@
 }
 
 .button:hover {
-  background: var(--color-secondary);
+  filter: brightness(0.88);
   transform: translateY(-2px);
-  box-shadow: 0 5px 20px rgba(87, 108, 188, 0.4);
+  box-shadow: 0 5px 20px rgba(212, 160, 23, 0.35);
 }
 
 .buttonSecondary {
@@ -105,6 +105,7 @@
 
 .buttonSecondary:hover {
   background: var(--color-primary);
+  color: var(--color-bg);
   transform: translateY(-2px);
 }
 

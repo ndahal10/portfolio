@@ -1,6 +1,6 @@
 .footer {
   background: var(--color-bg);
-  border-top: 1px solid rgba(87, 108, 188, 0.3);
+  border-top: 1px solid var(--color-border);
   padding: 3rem 2rem 2rem;
 }
 
@@ -54,7 +54,7 @@
 .bottom {
   text-align: center;
   padding-top: 2rem;
-  border-top: 1px solid rgba(87, 108, 188, 0.2);
+  border-top: 1px solid var(--color-border-subtle);
 }
 
 .bottom p {
