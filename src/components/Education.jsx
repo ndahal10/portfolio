@@ -7,9 +7,10 @@ function Education() {
       degree: "B.S. in Computer Science",
       achievements: [
         "Coursework: Data Structures & Algorithms, Database Design, Operating Systems, Computer Networks, Linear Algebra, Computer Architecture, Linux Programming, Agile/Scrum Methodologies",
-        "Languages: Python, Java, JavaScript, C/C++, SQL, HTML/CSS",
-        "Frameworks & Libraries: React.js, Node.js, Flask, Pandas, Boto3, Conda, Tailwind CSS",
-        "Tools & Platforms: AWS, Firebase, Git, Power BI, Tableau, Figma"
+        "Languages: Python, TypeScript, JavaScript, SQL, Java, C/C++",
+        "Frameworks & Libraries: React.js, Next.js, Node.js, Express, Chart.js, Recharts",
+        "Cloud & Infrastructure: AWS (Lambda, Step Functions, RDS, CloudFormation), Vercel, CI/CD",
+        "Databases & Tools: PostgreSQL, MySQL, Firestore, Git, Power BI, Stripe"
       ]
     }
   ]
