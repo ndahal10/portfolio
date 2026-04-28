@@ -5,7 +5,6 @@ function Education() {
     {
       school: "New Jersey Institute of Technology",
       degree: "B.S. in Computer Science",
-      description: "Building a strong foundation in computer science",
       achievements: [
         "Coursework: Data Structures & Algorithms, Database Design, Operating Systems, Computer Networks, Linear Algebra, Computer Architecture, Linux Programming, Agile/Scrum Methodologies",
         "Languages: Python, Java, JavaScript, C/C++, SQL, HTML/CSS",
