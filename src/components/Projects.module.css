@@ -165,6 +165,13 @@
   opacity: 0.75;
 }
 
+.note {
+  margin-top: 0.4rem;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
 /* Mobile: collapse to single column */
 @media (max-width: 768px) {
   .projects {

@@ -8,7 +8,8 @@ function Projects() {
       description: "AI running coach that rebuilds your training plan based on real performance data",
       summary: "Shipped production-grade — real auth, Firestore backend, and Claude AI with structured output validation. Users log pace, heart rate, distance, and cadence; the AI rebuilds their training plan after every run.",
       technologies: ["Next.js", "TypeScript", "Firebase", "Claude API", "Vercel"],
-      url: "https://pace-wise.vercel.app/"
+      url: "https://pace-wise.vercel.app/",
+      note: "Note: deployed site is currently down — removed API keys after a Vercel security incident."
     },
     {
       name: "STYGO",
@@ -43,6 +44,9 @@ function Projects() {
                   <a href={project.url} target="_blank" rel="noopener noreferrer" className={styles.deployedLink}>
                     View Deployed Site →
                   </a>
+                )}
+                {project.note && (
+                  <p className={styles.note}>{project.note}</p>
                 )}
               </div>
             </div>
