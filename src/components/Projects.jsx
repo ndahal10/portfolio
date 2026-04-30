@@ -9,7 +9,7 @@ function Projects() {
       summary: "Shipped production-grade — real auth, Firestore backend, and Claude AI with structured output validation. Users log pace, heart rate, distance, and cadence; the AI rebuilds their training plan after every run.",
       technologies: ["Next.js", "TypeScript", "Firebase", "Claude API", "Vercel"],
       url: "https://pace-wise.vercel.app/",
-      note: "Note: deployed site is currently down — removed API keys after a Vercel security incident."
+      note: "Note: deployed site is currently down — removed API keys after the recent infamous Vercel security incident."
     },
     {
       name: "STYGO",
