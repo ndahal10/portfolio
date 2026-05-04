@@ -19,7 +19,7 @@ function Footer() {
           </div>
         </div>
         <div className={styles.bottom}>
-          <p>&copy; {new Date().getFullYear()} Neelaza Dahal. Built with curiosity and code.</p>
+          <p>&copy; {new Date().getFullYear()} Neelaza Dahal.</p>
         </div>
       </div>
     </footer>

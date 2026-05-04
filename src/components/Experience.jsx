@@ -8,7 +8,7 @@ function Experience() {
       period: "July 2025 - January 2026",
       description: "Led data infrastructure and BI solutions development for enterprise reporting",
       summary: "Delivered business intelligence improvements by migrating 50+ KPIs from spreadsheets to AWS RDS/PostgreSQL and building real-time dashboards that saved 10+ hours of weekly reporting time.",
-      technologies: ["AWS", "Redshift", "Power BI", "PostgreSQL", "CloudFormation", "SQL", "RDS"]
+      technologies: ["AWS", "Redshift", "Power BI", "PostgreSQL", "CloudFormation"]
     },
     {
       company: "Prudential Financial",
@@ -16,7 +16,7 @@ function Experience() {
       period: "June 2024 - August 2024",
       description: "Built cloud automation solutions and infrastructure tools serving 1,000+ employees",
       summary: "Automated AWS resource cleanup across sandbox accounts, reducing decommission time by 90% and generating $100K+ annual savings while building secure credential access solution for 1,000+ employees.",
-      technologies: ["AWS", "Python", "Boto3", "CloudFormation", "CI/CD", "Cloud Control API"]
+      technologies: ["AWS", "Python", "Boto3", "CloudFormation"]
     },
     {
       company: "Nuveen, TIAA",
@@ -24,7 +24,7 @@ function Experience() {
       period: "June 2023 - August 2023",
       description: "Developed data visualization tools for investment portfolio analytics platform",
       summary: "Built interactive React visualization widget with efficient caching that reduced API calls by 60% and boosted platform adoption by 50%.",
-      technologies: ["React", "REST APIs", "JavaScript", "Data Visualization", "Caching"]
+      technologies: ["React", "REST APIs", "JavaScript"]
     },
     {
       company: "Women in Computing Society, NJIT",
