@@ -18,9 +18,6 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className={styles.bottom}>
-          <p>&copy; {new Date().getFullYear()} Neelaza Dahal.</p>
-        </div>
       </div>
     </footer>
   )

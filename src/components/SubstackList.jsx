@@ -3,6 +3,14 @@ import styles from './SubstackList.module.css'
 function SubstackList() {
   const articles = [
     {
+      title: "From 'System of Record' to 'System of Intelligence'",
+      author: "Gio Ahern, Steph Zhang & Alex Immerman",
+      publication: "a16z",
+      url: "https://open.substack.com/pub/a16z/p/from-system-of-record-to-system-of?r=5f8bnb&utm_medium=ios",
+      description: "AI intelligence layers are becoming the dominant value driver in enterprise software, displacing CRMs from core platforms to backend infrastructure.",
+      tags: ["AI", "Tech"]
+    },
+    {
       title: "The terrifying freedom of having no idea what you're doing with your life",
       author: "Ayushi Thakkar",
       publication: "milk and cookies",
@@ -22,11 +30,10 @@ function SubstackList() {
       title: "The Fig Tree Analogy: The lives we'll never live",
       author: "The Book Club",
       publication: "Love Letters to Literature",
-      url: "https://open.substack.com/pub/theebookclubx/p/topics-to-research-when-youre-bored-fda?r=5f8bnb&utm_medium=ios",
+      url: "https://theebookclubx.substack.com/p/the-fig-tree-analogy-explained",
       description: "On choice, paralysis, and the fear of missing your life while trying to choose it.",
       tags: ["Writing", "Growth"]
     },
-    // Add more articles here
   ]
 
   return (

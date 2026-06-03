@@ -1,43 +1,31 @@
 import styles from './Education.module.css'
 
 function Education() {
-  const education = [
-    {
-      school: "New Jersey Institute of Technology",
-      degree: "B.S. in Computer Science",
-      achievements: [
-        "Coursework: Data Structures & Algorithms, Database Design, Operating Systems, Computer Networks, Linear Algebra, Computer Architecture, Linux Programming, Agile/Scrum Methodologies",
-        "Languages: Python, TypeScript, JavaScript, SQL, Java, C/C++",
-        "Frameworks & Libraries: React.js, Next.js, Node.js, Express, Chart.js, Recharts",
-        "Cloud & Infrastructure: AWS (Lambda, Step Functions, RDS, CloudFormation), Vercel, CI/CD",
-        "Databases & Tools: PostgreSQL, MySQL, Firestore, Git, Power BI, Stripe"
-      ]
-    }
+  const skills = [
+    { label: "Languages", value: "Python, TypeScript, JavaScript, SQL, Java, C/C++" },
+    { label: "Frameworks", value: "React.js, Next.js, Node.js, Express, Zod, Chart.js, Recharts" },
+    { label: "Cloud", value: "AWS (Lambda, Step Functions, RDS, CloudFormation), Vercel, GitHub Actions" },
+    { label: "Databases & AI", value: "PostgreSQL, MySQL, Supabase, Firestore, Anthropic API, Git, Power BI, Stripe" },
   ]
 
   return (
     <section className={styles.education} id="education">
       <div className={styles.container}>
-        <h2 className={styles.title}>Education</h2>
-        <p className={styles.subtitle}>
-          Learning and growing
-        </p>
-        <div className={styles.timeline}>
-          {education.map((edu, index) => (
-            <div key={index} className={styles.card}>
-              <div className={styles.period}>{edu.period}</div>
-              <h3 className={styles.school}>{edu.school}</h3>
-              <h4 className={styles.degree}>{edu.degree}</h4>
-              <p className={styles.description}>{edu.description}</p>
-              {edu.achievements && (
-                <ul className={styles.achievements}>
-                  {edu.achievements.map((achievement, i) => (
-                    <li key={i}>{achievement}</li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          ))}
+        <p className={styles.label}>Education</p>
+        <div className={styles.entry}>
+          <div className={styles.entryHeader}>
+            <h3 className={styles.school}>New Jersey Institute of Technology</h3>
+            <span className={styles.period}>May 2026</span>
+          </div>
+          <p className={styles.degree}>B.S. Computer Science</p>
+          <div className={styles.skills}>
+            {skills.map((skill, i) => (
+              <div key={i} className={styles.skillRow}>
+                <span className={styles.skillLabel}>{skill.label}</span>
+                <span className={styles.skillValue}>{skill.value}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

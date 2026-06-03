@@ -1,6 +1,6 @@
 .logbook {
   padding: 5rem 2rem;
-  background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-dark) 100%);
+  background: var(--color-bg);
 }
 
 .container {
@@ -31,7 +31,7 @@
 
 /* Entry card */
 .entry {
-  background: var(--color-card-bg);
+  background: var(--color-tag-bg);
   border: 1px solid rgba(87, 108, 188, 0.25);
   border-radius: 12px;
   overflow: hidden;
@@ -57,7 +57,7 @@
 }
 
 .entryHeader:hover {
-  background: var(--color-card-bg-hover);
+  background: var(--color-border);
 }
 
 .entryMeta {
@@ -85,7 +85,7 @@
 .chevron {
   display: flex;
   align-items: center;
-  color: var(--color-text-faint);
+  color: var(--color-text-subtle);
   flex-shrink: 0;
   margin-top: 0.15rem;
   transition: transform 0.25s ease, color 0.2s ease;

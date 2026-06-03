@@ -3,52 +3,37 @@ import styles from './Projects.module.css'
 function Projects() {
   const projects = [
     {
-      name: "PaceWise",
-      period: "2026",
-      description: "AI running coach that rebuilds your training plan based on real performance data",
-      summary: "Shipped production-grade — real auth, Firestore backend, and Claude AI with structured output validation. Users log pace, heart rate, distance, and cadence; the AI rebuilds their training plan after every run.",
-      technologies: ["Next.js", "TypeScript", "Firebase", "Claude API", "Vercel"],
-      url: "https://pace-wise.vercel.app/",
-      note: "Note: deployed site is currently down — removed API keys after the recent infamous Vercel security incident."
-    },
-    {
       name: "STYGO",
       period: "2025",
-      description: "Salon management and booking platform with payment processing",
-      summary: "Built full-stack salon booking platform with Stripe payments, real-time scheduling, and comprehensive dashboards for staff operations and analytics.",
-      technologies: ["React", "Node.js", "Stripe", "Authentication", "SMS/Email APIs", "Full-Stack"],
-      url: "https://main.d9mc2v9b3gxgw.amplifyapp.com/"
+      description: "Multi-tenant salon management and booking platform",
+      summary: "Architected tenant-isolated data access in MySQL with row-level scoping and role-based dashboards for owners, staff, and customers. Built dual-auth supporting manual JWT cookie sessions and Firebase OAuth with automatic role assignment, plus SMS 2FA with a Twilio-to-ClickSend fallback. Implemented Stripe payments, loyalty points, automated notifications, and revenue analytics as discrete backend services.",
+      url: "https://stygo.app"
     }
   ]
 
   return (
     <section className={styles.projects} id="projects">
       <div className={styles.container}>
-        <h2 className={styles.title}>Projects</h2>
-        <p className={styles.subtitle}>Things I've built outside of work</p>
-        <div className={styles.timeline}>
+        <p className={styles.label}>Projects</p>
+        <div className={styles.list}>
           {projects.map((project, index) => (
-            <div key={index} className={`${styles.item} ${index % 2 === 0 ? styles.left : styles.right}`}>
-              <div className={styles.dot} />
-              <div className={styles.card}>
-                <span className={styles.period}>{project.period}</span>
-                <h3 className={styles.name}>{project.name}</h3>
-                <p className={styles.description}>{project.description}</p>
-                <p className={styles.summary}>{project.summary}</p>
-                <div className={styles.technologies}>
-                  {project.technologies.map((tech, i) => (
-                    <span key={i} className={styles.tech}>{tech}</span>
-                  ))}
+            <div key={index} className={styles.item}>
+              <div className={styles.itemHeader}>
+                <div>
+                  <h3 className={styles.name}>{project.name}</h3>
+                  <p className={styles.description}>{project.description}</p>
                 </div>
-                {project.url && (
-                  <a href={project.url} target="_blank" rel="noopener noreferrer" className={styles.deployedLink}>
-                    View Deployed Site →
-                  </a>
-                )}
-                {project.note && (
-                  <p className={styles.note}>{project.note}</p>
-                )}
+                <span className={styles.period}>{project.period}</span>
               </div>
+              <p className={styles.summary}>{project.summary}</p>
+              {project.url && (
+                <a href={project.url} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                  View site →
+                </a>
+              )}
+              {project.note && (
+                <p className={styles.note}>{project.note}</p>
+              )}
             </div>
           ))}
         </div>

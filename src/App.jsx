@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
-import Education from './components/Education'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
 import SubstackList from './components/SubstackList'
@@ -26,7 +25,6 @@ function App() {
     <div className={styles.App}>
       <Navigation theme={theme} toggleTheme={toggleTheme} />
       <Hero />
-      <Education />
       <Experience />
       <Projects />
       <SubstackList />

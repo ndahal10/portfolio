@@ -3,60 +3,58 @@ import styles from './Experience.module.css'
 function Experience() {
   const experiences = [
     {
+      company: "Tvara App",
+      role: "CTO & Founder",
+      period: "March 2026 — Present",
+      summary: "AI-powered adaptive running coach that regenerates personalized weekly training plans after every logged run.",
+      url: "https://tvara-app.com/"
+    },
+    {
       company: "Prudential Financial",
       role: "Technology Associate",
-      period: "July 2025 - January 2026",
-      description: "Led data infrastructure and BI solutions development for enterprise reporting",
-      summary: "Delivered business intelligence improvements by migrating 50+ KPIs from spreadsheets to AWS RDS/PostgreSQL and building real-time dashboards that saved 10+ hours of weekly reporting time.",
-      technologies: ["AWS", "Redshift", "Power BI", "PostgreSQL", "CloudFormation"]
+      period: "July 2025 — January 2026",
+      summary: "Migrated 50+ KPIs from spreadsheets into a real-time dashboard, reducing manual reporting effort by 10+ hours weekly. Built a phishing simulation dashboard with role-based insights for leadership and audited faulty measures across 50% of reported KPIs, restoring full data accuracy."
+    },
+    {
+      company: "Ying Wu College of Computing, NJIT",
+      role: "Undergraduate Teaching Assistant",
+      period: "September 2023 — May 2025",
+      summary: "Mentored 30+ students in Intro to Python through weekly office hours focused on production debugging patterns, code optimization, and core programming concepts."
     },
     {
       company: "Prudential Financial",
       role: "Software Engineer Intern",
-      period: "June 2024 - August 2024",
-      description: "Built cloud automation solutions and infrastructure tools serving 1,000+ employees",
-      summary: "Automated AWS resource cleanup across sandbox accounts, reducing decommission time by 90% and generating $100K+ annual savings while building secure credential access solution for 1,000+ employees.",
-      technologies: ["AWS", "Python", "Boto3", "CloudFormation"]
+      period: "June 2024 — August 2024",
+      summary: "Automated AWS account decommissioning, cutting decommission time by 90% and saving $100K+ annually in cloud costs."
     },
     {
       company: "Nuveen, TIAA",
       role: "Software Engineer Intern",
-      period: "June 2023 - August 2023",
-      description: "Developed data visualization tools for investment portfolio analytics platform",
-      summary: "Built interactive React visualization widget with efficient caching that reduced API calls by 60% and boosted platform adoption by 50%.",
-      technologies: ["React", "REST APIs", "JavaScript"]
-    },
-    {
-      company: "Women in Computing Society, NJIT",
-      role: "Events Coordinator",
-      period: "January 2022 - May 2023",
-      description: "Led event coordination and mentorship for women in tech community",
-      summary: "Organized GirlHacks hackathon with 300+ participants and 10+ sponsors while mentoring women in tech and fostering an inclusive community.",
-      technologies: ["Leadership", "Event Management", "Mentoring", "Community Building"]
+      period: "June 2023 — August 2023",
+      summary: "Shipped price history and trend visualization features for a production investment portfolio platform, replacing spreadsheet-based bond tracking and driving a 50% increase in platform adoption among analysts."
     }
   ]
 
   return (
     <section className={styles.experience} id="experience">
       <div className={styles.container}>
-        <h2 className={styles.title}>Experience</h2>
-        <p className={styles.subtitle}>Building, breaking, and learning from every project</p>
-        <div className={styles.timeline}>
+        <p className={styles.label}>Experience</p>
+        <div className={styles.list}>
           {experiences.map((exp, index) => (
-            <div key={index} className={`${styles.item} ${index % 2 === 0 ? styles.left : styles.right}`}>
-              <div className={styles.dot} />
-              <div className={styles.card}>
-                <span className={styles.period}>{exp.period}</span>
-                <h3 className={styles.company}>{exp.company}</h3>
-                <h4 className={styles.role}>{exp.role}</h4>
-                <p className={styles.description}>{exp.description}</p>
-                <p className={styles.summary}>{exp.summary}</p>
-                <div className={styles.technologies}>
-                  {exp.technologies.map((tech, i) => (
-                    <span key={i} className={styles.tech}>{tech}</span>
-                  ))}
+            <div key={index} className={styles.item}>
+              <div className={styles.itemHeader}>
+                <div>
+                  <h3 className={styles.company}>{exp.company}</h3>
+                  <p className={styles.role}>{exp.role}</p>
                 </div>
+                <span className={styles.period}>{exp.period}</span>
               </div>
+              <p className={styles.summary}>{exp.summary}</p>
+              {exp.url && (
+                <a href={exp.url} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                  View site →
+                </a>
+              )}
             </div>
           ))}
         </div>
