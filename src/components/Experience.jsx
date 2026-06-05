@@ -1,5 +1,28 @@
 import styles from './Experience.module.css'
 
+const tvaraPosts = [
+  {
+    platform: 'Instagram',
+    image: '/portfolio/tvara-post-3.png',
+    url: 'https://www.instagram.com/p/DZNMX9NReDN/?igsh=MTVqemNzeGlhaWo2eA==',
+  },
+  {
+    platform: 'Instagram',
+    image: '/portfolio/tvara-post-2.png',
+    url: 'https://www.instagram.com/p/DZLtlaCxuaI/?igsh=ZDluczRnbjhpNm5l',
+  },
+  {
+    platform: 'Instagram',
+    image: '/portfolio/tvara-post-1.png',
+    url: 'https://www.instagram.com/p/DZGjWaNx8ew/?igsh=MW4zbTIycW9qZW12aQ==',
+  },
+  {
+    platform: 'LinkedIn',
+    image: '/portfolio/linkedin-post-tvara.png',
+    url: 'https://www.linkedin.com/company/tvara-app',
+  },
+]
+
 function Experience() {
   const experiences = [
     {
@@ -7,7 +30,8 @@ function Experience() {
       role: "CTO & Founder",
       period: "March 2026 — Present",
       summary: "AI-powered adaptive running coach that regenerates personalized weekly training plans after every logged run.",
-      url: "https://tvara-app.com/"
+      url: "https://tvara-app.com/",
+      posts: tvaraPosts,
     },
     {
       company: "Prudential Financial",
@@ -54,6 +78,22 @@ function Experience() {
                 <a href={exp.url} target="_blank" rel="noopener noreferrer" className={styles.link}>
                   View site →
                 </a>
+              )}
+              {exp.posts && (
+                <div className={styles.posts}>
+                  {exp.posts.map((post, j) => (
+                    <a
+                      key={j}
+                      href={post.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.postCard}
+                      aria-label={`Tvara App on ${post.platform}`}
+                    >
+                      <img src={post.image} alt={`Tvara App ${post.platform} post`} className={styles.postImage} />
+                    </a>
+                  ))}
+                </div>
               )}
             </div>
           ))}
