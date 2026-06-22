@@ -73,8 +73,21 @@
   margin-bottom: 1.1rem;
 }
 
-.description:last-of-type {
+.aboutSection {
+  margin-bottom: 1.75rem;
+}
+
+.aboutSection:last-of-type {
   margin-bottom: 2.25rem;
+}
+
+.sectionHeading {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
 }
 
 .social {

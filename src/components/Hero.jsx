@@ -14,14 +14,29 @@ function Hero() {
         <div className={styles.content}>
           <h1 className={styles.greeting}>Hi, I'm Neelaza.</h1>
           <p className={styles.intro}>
-            I love understanding how systems are designed, from the infrastructure underneath to the product on top.
+            I love understanding how systems work, from the underlying infrastructure to the final product experience.
           </p>
-          <p className={styles.description}>
-            As a recent NJIT graduate, my <strong>obsession with building</strong> started early. It began with assembling whatever I could get my hands on, acting as family tech support, and spending hours <strong>reverse-engineering problems</strong> just to understand them. I was even building basic robots in Scratch before I formally knew what programming was. My dad used to take me to <strong>MIT events</strong>, and somewhere between the whiteboards and the founders, I fell in love with both the <strong>engineering and the entrepreneurial</strong> sides of technology.
-          </p>
-          <p className={styles.description}>
-            Now, I build software. I want to join a team where I can <strong>ship real products</strong>, learn from <strong>world-class engineers</strong>, and be surrounded by people who push each other. Ultimately, I want to help build the kind of <strong>community and pathway</strong> I wish had existed for <strong>women entering this field</strong>.
-          </p>
+
+          <div className={styles.aboutSection}>
+            <h2 className={styles.sectionHeading}>How I Got Here</h2>
+            <p className={styles.description}>
+              My path into tech started early, rooted in a mix of childhood curiosity and hands-on problem-solving—whether it was rebuilding things around the house, acting as family tech support, or building basic robots in Scratch. Spending time at MIT events with my dad exposed me to both the engineering and entrepreneurial sides of technology, and I've been hooked ever since.
+            </p>
+          </div>
+
+          <div className={styles.aboutSection}>
+            <h2 className={styles.sectionHeading}>What I'm Looking For</h2>
+            <p className={styles.description}>
+              As a recent NJIT graduate, I'm looking to join a collaborative engineering team where I can ship impactful software and learn from world-class engineers.
+            </p>
+          </div>
+
+          <div className={styles.aboutSection}>
+            <h2 className={styles.sectionHeading}>Beyond the Code</h2>
+            <p className={styles.description}>
+              I care deeply about the human side of tech. I want to actively help build inclusive engineering communities and create clearer, more supportive pathways for women entering the field.
+            </p>
+          </div>
           <div className={styles.social}>
             <a href="https://github.com/ndahal10" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
